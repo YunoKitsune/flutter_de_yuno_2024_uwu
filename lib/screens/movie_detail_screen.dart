@@ -1,0 +1,37 @@
+import 'package:flutter/material.dart';
+import 'package:tap_2024_yuno_uwu/models/popular_model.dart';
+
+
+class MovieDetailScreen extends StatefulWidget {
+  const MovieDetailScreen({super.key});
+
+  @override
+  State<MovieDetailScreen> createState() => _MovieDetailScreenState();
+}
+
+class _MovieDetailScreenState extends State<MovieDetailScreen> {
+
+  bool isFavorite = false;
+
+  @override
+  Widget build(BuildContext context) {
+
+    final popularModel = ModalRoute.of(context)!.settings.arguments as PopularModel;
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(popularModel.originalTitle),
+        //Lo de abajo viene en una tarea para añadile cosas de la api
+        actions: [
+          IconButton(onPressed: (){
+            setState(() {
+              isFavorite = !isFavorite;
+            });
+          }, 
+          icon: isFavorite ? Icon(Icons.favorite) : Icon(Icons.favorite_border)
+          )
+        ],
+      ),
+    );
+  }
+}
