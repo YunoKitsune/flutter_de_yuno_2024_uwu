@@ -11,7 +11,7 @@ class ApiPopular{
 
     Response response = await  http.get(uri);
 
-    if( response.statusCode == 200){
+    if( response.statusCode == 200){ //Envia un mapa de tipo PopularModel con el json parseado con el metodo jsonDecode.
       final jsonPopular = jsonDecode(response.body)['results'] as List;
       return jsonPopular.map((popular) => PopularModel.fromMap(popular)).toList();
       //La linea anterior es una funcion que funciona como un ciclo recorriendo cada llave de la api que este en "results"

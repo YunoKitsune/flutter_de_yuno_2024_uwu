@@ -21,7 +21,7 @@ class SplashScreen extends StatelessWidget {
             ]
           ),
         logo: Lottie.asset(
-          'assets/logo_tecnm.json',
+          'assets/tecnm.json',
            height: MediaQuery.of(context).size.height * .7
            ), //Calcula el tamaño de la pantalla
         done: Done(const LoginScreen()),
@@ -29,7 +29,7 @@ class SplashScreen extends StatelessWidget {
         bottomLoading: true,
       )
         /*Center(
-        child: Lottie.asset('assets/logo_tecnm.json'),*/
+        child: Lottie.asset('assets/tecnm.json'),*/
     );
   }
 }

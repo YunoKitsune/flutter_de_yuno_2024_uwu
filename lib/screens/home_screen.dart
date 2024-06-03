@@ -50,6 +50,30 @@ class HomeScreen extends StatelessWidget {
                 trailing: Icon(Icons.chevron_right),
                 onTap: () => Navigator.pushNamed(context, "/intent"),
               ),
+            ListTile(
+              title: Text('Peliculas populares'),
+              subtitle: Text('api de populares'),
+              tileColor: Colors.greenAccent,
+              leading: Icon(Icons.abc),
+              trailing: Icon(Icons.chevron_right),
+              onTap: () => Navigator.pushNamed(context, "/popular"),
+            ),
+            ListTile(
+              title: Text('Peliculas con detalle'),
+              subtitle: Text('Api con detalles'),
+              tileColor: Colors.greenAccent,
+              leading: Icon(Icons.abc),
+              trailing: Icon(Icons.chevron_right),
+              onTap: () => Navigator.pushNamed(context, "/detail"),
+            ),
+            ListTile(
+              title: Text('Favoritos'),
+              subtitle: Text('Favoritas elegidas por mi jsjs'),
+              tileColor: Colors.greenAccent,
+              leading: Icon(Icons.abc),
+              trailing: Icon(Icons.chevron_right),
+              onTap: () => Navigator.pushNamed(context, "/favorites"),
+            ),
               DayNightSwitcher(
                 isDarkModeEnabled: ValueListener.isDark.value, 
                 onStateChanged: (isDarkModeEnabled) {

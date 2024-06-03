@@ -29,7 +29,7 @@ class PopularModel {
     //String a = "https://image.tmdb.org/t/p/w500/";
     //if(map['backdrop_path'].){}
     return PopularModel(
-      backdropPath: map['backdrop_path'] ?? 'https://static.animecorner.me/2021/05/ZSR-07-11.png', 
+      backdropPath: map['backdrop_path'] ?? '', //'https://static.animecorner.me/2021/05/ZSR-07-11.png',
       id: map['id'],  
       originalLanguage: map['original_language'], 
       originalTitle: map['original_title'], 
