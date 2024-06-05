@@ -6,6 +6,7 @@ import 'package:tap_2024_yuno_uwu/screens/login_screen_2.dart';
 import 'package:tap_2024_yuno_uwu/screens/login_screen_tarea.dart';
 import 'package:tap_2024_yuno_uwu/screens/movie_detail_screen.dart';
 import 'package:tap_2024_yuno_uwu/screens/popular_screen.dart';
+import 'package:tap_2024_yuno_uwu/screens/register_screen.dart';
 import 'package:tap_2024_yuno_uwu/screens/splash_screen.dart';
 import 'package:tap_2024_yuno_uwu/settings/theme_settings.dart';
 import 'package:tap_2024_yuno_uwu/settings/value_listener.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
           return MaterialApp(
               debugShowCheckedModeBanner: false,
               //home: const SplashScreen(),
-              home: SplashScreen(),
+              home: RegisterScreen(),
               theme: value
                   ? ThemeSettings.darkTheme(context)
                   : ThemeSettings.lightTeme(context),

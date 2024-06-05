@@ -17,7 +17,6 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-
     final txtUser = TextFormField(
       decoration: const InputDecoration(
         icon: Icon(Icons.person),
